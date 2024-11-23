@@ -1,0 +1,29 @@
+Napole0n/
+├── Modules/
+│   ├── Cryptography/
+│   │   ├── KeyManagement.py
+│   │   ├── Encryption.py
+│   │   ├── Hashing.py
+│   ├── VulnerabilityAnalysis/
+│   │   ├── PortScanner.py
+│   │   ├── ServiceDetection.py
+│   │   ├── CVEDiscovery.py
+│   ├── PenetrationTesting/
+│   │   ├── PayloadGenerator.py
+│   │   ├── BruteForce.py
+│   │   ├── ExploitScanner.py
+│   ├── NetworkMonitoring/
+│   │   ├── TrafficSniffer.py
+│   │   ├── IntrusionDetection.py
+│   │   ├── ProtocolAnalysis.py
+│   ├── OSINT/
+│   │   ├── DomainRecon.py
+│   │   ├── MetadataExtractor.py
+│   │   ├── SocialMediaScraper.py
+│   ├── AutomationReporting/
+│   │   ├── TaskScheduler.py
+│   │   ├── LogCentralizer.py
+│   │   ├── ReportGenerator.py
+├── Napole0n.py
+├── README.md
+└── requirements.txt
