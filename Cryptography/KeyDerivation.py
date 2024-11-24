@@ -30,7 +30,4 @@ def KeyDerivation(password, length=16):
 
     return result[:length]
 
-password = args.get('password')
-length   = args.get('length')
-
 print(f"\n   {Green}>{Yellow}> {Reset}Password as been generated: {Blue}{KeyDerivation(password, length)}{Reset}\n")
