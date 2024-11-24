@@ -30,4 +30,4 @@ def KeyDerivation(password, length=16):
 
     return result[:length]
 
-print(f"\n   {Green}>{Yellow}> {Reset}Password as been generated: {Blue}{KeyDerivation(prompt, length)}{Reset}\n")
+print(f"\n   {Green}>{Yellow}> {Reset}Password as been generated: {Blue}{KeyDerivation(password, length)}{Reset}\n")
