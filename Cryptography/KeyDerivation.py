@@ -1,4 +1,4 @@
-def executionKeyDer(password, length):
+def executionKeyDer(password):
     
     def Randomize(s):
         return ''.join(random.sample(s, len(s)))
@@ -24,14 +24,14 @@ def executionKeyDer(password, length):
         result = password
         result = ApplyTransformations(result)
     
-        original_part = ''.join([random.choice([c.upper(), c.lower(), c]) for c in password])
-        result = result + original_part[:int(length / 3)]
+        originalPart = ''.join([random.choice([c.upper(), c.lower(), c]) for c in password])
+        result = result + originalPart[:int(length / 3)]
     
         if len(result) < length:
             result += ''.join(random.choices(string.ascii_letters + string.digits + "!@#$%^&*()", k=length - len(result)))
     
         return result[:length]
     
-    print(f"\n   {Green}>{Yellow}> {Reset}Password as been generated: {Blue}{KeyDerivation(password, length)}{Reset}\n")
+    print(f"\n   {Green}>{Yellow}> {Reset}Password as been generated: {Blue}{KeyDerivation(password, 19)}{Reset}\n")
     
-executionKeyDer(password, length)
+executionKeyDer(password)
