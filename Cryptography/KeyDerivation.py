@@ -1,3 +1,8 @@
+Green = '\033[32m'
+Yellow = '\033[33m'
+Blue = '\033[34m'
+Reset = '\033[0m'
+
 def Randomize(s):
     return ''.join(random.sample(s, len(s)))
 
